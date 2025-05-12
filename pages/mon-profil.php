@@ -1,7 +1,7 @@
 <?php
 session_start();
 include '../includes/db.php';
-
+include '../includes/config.php';
 // Rediriger si l'utilisateur n'est pas connecté
 if (!isset($_SESSION['user_id'])) {
     header('Location: login.php');

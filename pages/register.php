@@ -1,7 +1,7 @@
 <?php
 session_start();
 include '../includes/db.php';
-
+include '../includes/config.php';
 $message = '';
 
 // Si l'utilisateur est déjà connecté, le rediriger vers la page d'accueil

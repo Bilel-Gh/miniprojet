@@ -1,7 +1,7 @@
 <?php
 session_start();
 include '../includes/db.php';
-
+include '../includes/config.php';
 // Vérifier si l'utilisateur est connecté et a le rôle d'administrateur
 if (!isset($_SESSION['user_id']) || !isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
     header('Location: ../index.php');

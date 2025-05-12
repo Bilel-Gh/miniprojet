@@ -1,5 +1,6 @@
 <?php
 session_start();
+include_once '../includes/config.php';
 include '../includes/db.php';
 
 // Vérifier si l'ID de l'article est présent dans l'URL

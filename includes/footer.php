@@ -8,10 +8,10 @@
         <div class="footer-section links">
             <h3>Liens rapides</h3>
             <ul>
-                <li><a href="index.php">Accueil</a></li>
-                <li><a href="pages/articles.php">Articles</a></li>
-                <li><a href="pages/outils.php">Outils bien-être</a></li>
-                <li><a href="pages/contact.php">Contact</a></li>
+                <li><a href="<?php echo $root_path; ?>index.php">Accueil</a></li>
+                <li><a href="<?php echo $root_path; ?>pages/articles.php">Articles</a></li>
+                <li><a href="<?php echo $root_path; ?>pages/outils.php">Outils bien-être</a></li>
+                <li><a href="<?php echo $root_path; ?>pages/contact.php">Contact</a></li>
             </ul>
         </div>
 
