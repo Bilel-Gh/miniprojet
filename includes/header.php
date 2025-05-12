@@ -1,0 +1,28 @@
+<header>
+    <div class="logo">
+        <h1>NutriVie</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.php">Accueil</a></li>
+            <li><a href="pages/articles.php">Articles</a></li>
+            <li><a href="pages/outils.php">Outils bien-être</a></li>
+            <li><a href="pages/contact.php">Contact</a></li>
+            <?php
+            if (isset($_SESSION['user_id'])) {
+                echo '<li><a href="pages/mon-profil.php">Mon Profil</a></li>';
+
+                // Si c'est un administrateur, ajouter un lien vers le panneau d'administration
+                if (isset($_SESSION['role']) && $_SESSION['role'] == 'admin') {
+                    echo '<li><a href="admin/index.php">Administration</a></li>';
+                }
+
+                echo '<li><a href="pages/logout.php">Déconnexion</a></li>';
+            } else {
+                echo '<li><a href="pages/login.php">Connexion</a></li>';
+                echo '<li><a href="pages/register.php">Inscription</a></li>';
+            }
+            ?>
+        </ul>
+    </nav>
+</header>
